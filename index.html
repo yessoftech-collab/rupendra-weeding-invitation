@@ -191,17 +191,6 @@ footer p{color:var(--muted);font-size:13px}
 @keyframes fall{to{transform:translate(var(--dx),110vh) rotate(var(--r))}}
 .toast{position:fixed;left:50%;bottom:84px;transform:translate(-50%,20px);background:var(--ink);color:#fff;padding:11px 20px;border-radius:4px;font-size:14px;opacity:0;transition:.4s;z-index:90;pointer-events:none}
 .toast.show{opacity:1;transform:translate(-50%,0)}
-
-.deities{display:flex;justify-content:space-between;gap:10px;max-width:760px;margin:0 auto 18px;font-size:clamp(10px,2.4vw,12px);letter-spacing:.14em;text-transform:uppercase;color:var(--rose)}
-.ttl{font-family:'Dancing Script';font-size:clamp(30px,5vw,42px);color:var(--rose);margin-top:10px}
-.couple .nm{font-size:clamp(30px,5vw,40px);line-height:1.2}
-.couple .nm .pre{display:block;font-size:13px;font-family:Manrope;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:6px}
-.couple .par{font-size:19px;line-height:1.45;margin-top:4px}
-.couple .rel{font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--muted);margin-top:14px}
-.ev .when{font-size:13px;color:var(--rose);font-weight:500}
-.fam .card p .k{display:block;font-size:14px;color:var(--muted);font-family:Manrope;line-height:1.5}
-@media(max-width:780px){.fam .card[style*='span 2']{grid-column:auto !important}}
-@media(max-width:700px){.hero-text .names{font-size:50px;display:flex;flex-direction:column;line-height:1}.hero-text .names em{margin:6px 0;font-size:24px;vertical-align:0}}
 </style>
 </head>
 <body class="locked">
@@ -220,6 +209,7 @@ footer p{color:var(--muted);font-size:13px}
   </defs>
 </svg>
 
+
 <!-- ===== ENVELOPE GATE ===== -->
 <div id="gate">
   <div class="window">
@@ -235,7 +225,9 @@ footer p{color:var(--muted);font-size:13px}
   <div class="tap">Tap to open</div>
 </div>
 
-<audio id="song" loop preload="auto" type="audio/mpeg" src="./WhatsApp%20Audio%202026-11-04%20at%202.44.13%20PM.mpeg"></audio>
+<audio id="song" loop preload="metadata">
+  <source src="./WhatsApp%20Audio%202026-11-04%20at%202.44.13%20PM.mpeg" type="audio/mpeg">
+</audio>
 
 <main>
   <!-- HERO -->
