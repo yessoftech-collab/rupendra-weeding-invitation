@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Rupendra weds Gitanjali · Shubh Vivah · 26 Nov 2026</title>
-<meta name="description" content="Chi. Kunwar Rupendra Singh (Yogendra) with Sau. Kan. Gitanjali Kanwar (Prachi) — Mangal Parinayotsav, Thursday, 26th November 2026. Rathore Family, Thikana Kanpura (Beawar).">
+<title>Rupendra weds Geetanjali · Shubh Vivah · 26 Nov 2026</title>
+<meta name="description" content="Chi. Kunwar Rupendra Singh (Yogendra) with Sau. Kan. Geetanjali Kanwar (Prachi) — Mangal Parinayotsav, Thursday, 26th November 2026. Rathore Family, Thikana Kanpura (Beawar).">
 <meta name="theme-color" content="#264938">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -214,7 +214,7 @@ footer p{color:var(--muted);font-size:13px}
 <div id="gate">
   <div class="window">
     <p class="eyebrow">॥ Shri Ganeshaya Namah ॥</p>
-    <div class="names">Rupendra<em>&amp;</em>Gitanjali</div>
+    <div class="names">Rupendra<em>&amp;</em>Geetanjali</div>
     <p class="script" style="font-size:22px;color:var(--ink2)">Shubh Vivah · 26 November 2026</p>
   </div>
   <div class="panel l"><svg id="panelL" preserveAspectRatio="xMaxYMid slice"></svg></div>
@@ -236,7 +236,7 @@ footer p{color:var(--muted);font-size:13px}
       <div class="hero-text" id="heroText">
         <p class="hindi om">॥ श्री गणेशाय नमः ॥</p>
         <p class="eyebrow">Shubh Vivah</p>
-        <div class="names">Rupendra<em>&amp;</em>Gitanjali</div>
+        <div class="names">Rupendra<em>&amp;</em>Geetanjali</div>
         <p class="nick">Thikana Kanpura (Beawar)</p>
         <p class="sub">Thursday, 26th November 2026</p>
       </div>
@@ -288,7 +288,7 @@ footer p{color:var(--muted);font-size:13px}
         </div>
         <div class="reveal">
           <div class="mono">G</div>
-          <div class="nm"><span class="pre">Sau. Kan.</span>Gitanjali Kanwar <span style="font-size:.55em;font-style:italic;color:var(--muted)">(Prachi)</span></div>
+          <div class="nm"><span class="pre">Sau. Kan.</span>Geetanjali Kanwar <span style="font-size:.55em;font-style:italic;color:var(--muted)">(Prachi)</span></div>
           <div class="rel">Granddaughter of</div>
           <div class="par">Smt. Kajod Kanwar &amp; Thakur Sahab Ummed Singh Ji Rajawat</div>
           <div class="rel">Daughter of</div>
@@ -391,7 +391,7 @@ footer p{color:var(--muted);font-size:13px}
             <label class="f">Name<input id="wName" required placeholder="Your name"></label>
             <label class="f">Relation<input id="wRel" placeholder="e.g. Mama ji, Friend"></label>
           </div>
-          <label class="f">Your blessing<textarea id="wMsg" rows="3" required placeholder="A few words for Rupendra &amp; Gitanjali…"></textarea></label>
+          <label class="f">Your blessing<textarea id="wMsg" rows="3" required placeholder="A few words for Rupendra &amp; Geetanjali…"></textarea></label>
           <button class="btn" type="submit" style="justify-self:center;margin-top:4px">Send blessings</button>
         </form>
       </div>
@@ -461,7 +461,7 @@ footer p{color:var(--muted);font-size:13px}
   <div class="card">
     <button class="x" id="closeRsvp" aria-label="Close">×</button>
     <p class="eyebrow">R.S.V.P.</p>
-    <h2 style="font-size:36px">Rupendra &amp; Gitanjali</h2>
+    <h2 style="font-size:36px">Rupendra &amp; Geetanjali</h2>
     <form id="rsvpForm">
       <label class="f">Your Name<input id="rName" required></label>
       <div class="row2">
@@ -675,7 +675,7 @@ const amp=x=>x.replace(/&/g,'&amp;');
 document.getElementById('events').innerHTML=EV.map(e=>{
   if(e.day)return `<div class="daybar">${e.day}</div>`;
   num++;
-  const cal=e.s?`<a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=${encodeURIComponent(e.t+' · Rupendra & Gitanjali')}&dates=${e.s}/${e.e}${e.loc?'&location='+encodeURIComponent(e.loc):''}" target="_blank" rel="noopener">▢ Add to calendar</a>`:'';
+  const cal=e.s?`<a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=${encodeURIComponent(e.t+' · Rupendra & Geetanjali')}&dates=${e.s}/${e.e}${e.loc?'&location='+encodeURIComponent(e.loc):''}" target="_blank" rel="noopener">▢ Add to calendar</a>`:'';
   const dir=e.map?`<a href="${NAND}" target="_blank" rel="noopener">◎ Venue &amp; directions →</a>`:'';
   return `<div class="ev${e.big?' big':''}"><div><div class="no">${String(num).padStart(2,'0')}</div><div class="when">${e.d}<br>${e.time}</div></div>
   <div><h3>${amp(e.t)}</h3>${e.ven?`<div class="ven">${amp(e.ven)}</div>`:''}
@@ -689,7 +689,7 @@ document.getElementById('closeRsvp').onclick=()=>modal.classList.remove('show');
 modal.addEventListener('click',e=>{if(e.target===modal)modal.classList.remove('show')});
 document.getElementById('rsvpForm').addEventListener('submit',e=>{
   e.preventDefault();
-  const msg=`🌸 RSVP – Rupendra & Gitanjali Wedding (26 Nov 2026)\nName: ${rName.value}\nResponse: ${rAtt.value}\nGuests: ${rG.value}${rMsg.value?'\nMessage: '+rMsg.value:''}`;
+  const msg=`🌸 RSVP – Rupendra & Geetanjali Wedding (26 Nov 2026)\nName: ${rName.value}\nResponse: ${rAtt.value}\nGuests: ${rG.value}${rMsg.value?'\nMessage: '+rMsg.value:''}`;
   const a=document.createElement('a');a.href='https://wa.me/918955972416?text='+encodeURIComponent(msg);a.target='_blank';a.rel='noopener';document.body.appendChild(a);a.click();a.remove();
   modal.classList.remove('show');toast('Opening WhatsApp… thank you!');
 });
